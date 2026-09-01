@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705142034
+timestamp: 2026-09-01T04:15:59Z
+hostname: ubuntu
+---[user: getent passwd]---
+hiro184:x:1002:1004::/home/hiro184:/bin/bash
+---[group: getent group]---
+webteam:x:1003:hiro184
+---[user-in-group: id]---
+uid=1002(hiro184) gid=1004(hiro184) groups=1004(hiro184),1003(webteam)
+---[file stat: home file mode/owner]---
+/home/hiro184/report_2940.txt mode=640 owner=hiro184 group=webteam
+---[sshd effective config]---
+PermitRootLogin yes
+PermitRootLogin no
+PasswordAuthentication yes
+---[integrity]---
+sshd_sha256: 124b7e658ddf26b2f9bd6fd25ef484163eadf317bc74f789a8451666a53c4804
+===END LAB1 SUBMISSION===
