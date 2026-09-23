@@ -1,19 +1,19 @@
 ===BEGIN DHCP SUBMISSION===
 student_id: 6705142034
-timestamp: 2026-09-23T05:28:28Z
+timestamp: 2026-09-23T05:56:26Z
 hostname: ubuntu
 ---[dhcpd.conf]---
 default-lease-time 86400;
 max-lease-time 172800;
 authoritative;
 
-subnet 172.30.1.0 netmask 255.255.255.0 {
-}
-
 subnet 192.168.201.0 netmask 255.255.255.0 {
   range 192.168.201.59 192.168.201.159;
   option routers 192.168.201.1;
   option subnet-mask 255.255.255.0;
+}
+
+subnet 172.30.1.0 netmask 255.255.255.0 {
 }
 
 host reserved-host {
@@ -31,5 +31,5 @@ PID file: /var/run/dhcpd.pid
 ---[service status]---
 active
 ---[integrity]---
-conf_sha256: 5205185279813e4f97f6f79efc419ba2fcdee9366bf68d5f9efa719a0e09b223
+conf_sha256: 2d9bda51c8d61321a1513888faf27dcd6ec56a1e039724f25a23c71d2fbd3860
 ===END DHCP SUBMISSION===
